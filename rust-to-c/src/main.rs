@@ -1,7 +1,7 @@
-extern crate libc;
+use std::ffi::c_int;
 
 extern {
-    fn double_input(input: libc::c_int) -> libc::c_int;
+    fn double_input(input: c_int) -> c_int;
 }
 
 fn main() {
